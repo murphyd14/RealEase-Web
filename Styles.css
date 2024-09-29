@@ -1,11 +1,55 @@
+/* Body styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #1a1a1a;
     color: #e0e0e0;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
+/* Centered image container with black rounded rectangle */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Default behavior for title: hidden on larger screens */
+h1.mobile-title {
+    display: none;
+    color: #4a90e2;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Hide the image on mobile and show the title */
+@media (max-width: 768px) {
+    .image-container {
+        display: none;
+    }
+
+    h1.mobile-title {
+        display: block;
+    }
+}
+
+/* Container styling */
 .container {
     max-width: 800px;
     margin: 0;
@@ -15,14 +59,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-h1 {
-    text-align: center;
-    color: #4a90e2;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    font-size: 1.8em;
-}
-
+/* Table styling */
 table {
     width: 100%;
     border-collapse: separate;
@@ -32,12 +69,14 @@ table {
     border-radius: 8px;
 }
 
+/* Table container */
 .table-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
+/* Team member styling */
 .team-member {
     margin-bottom: 10px;
 }
@@ -53,6 +92,7 @@ table {
     color: #4a90e2;
 }
 
+/* Table cell styling */
 th, td {
     border: 1px solid #444;
     padding: 15px;
@@ -70,8 +110,9 @@ tr:nth-child(even) {
     background-color: #2f2f2f;
 }
 
+/* Link styling */
 a {
-    color: #4a90e2
+    color: #4a90e2;
     text-decoration: none;
 }
 
