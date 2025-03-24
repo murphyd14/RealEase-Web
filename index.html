@@ -1,122 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RealEase Project Website</title>
-    <link rel="stylesheet" href="Styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="RealEase - A comprehensive real estate analysis and comparison tool for informed property investment decisions"
+    />
+    <meta
+      name="keywords"
+      content="real estate, property analysis, investment tool, property comparison, ROI calculator"
+    />
+    <meta name="author" content="RealEase Team" />
+    <meta name="theme-color" content="#1a73e8" />
+    <meta property="og:title" content="RealEase | Real Estate Analysis Tool" />
+    <meta
+      property="og:description"
+      content="Make informed real estate investment decisions with RealEase's comprehensive analysis tools"
+    />
+    <meta property="og:image" content="assets/single_house_logo.png" />
+    <meta property="og:url" content="https://realease.com" />
+    <title>RealEase | Project Documentation</title>
+    <link rel="icon" type="image/png" href="assets/single_house_logo.png" />
+    <link rel="apple-touch-icon" href="assets/single_house_logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <div class="logo-container">
+          <img
+            src="assets/RealEase_logo2.png"
+            alt="RealEase Logo"
+            class="logo"
+          />
+        </div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#team">Team</a>
+          <a href="#milestones">Milestones</a>
+          <a href="Milestone_4/Refreshed_Realease_Demo.mp4" target="_blank"
+            >Live Demo</a
+          >
+        </div>
+      </nav>
+    </header>
 
-<!-- Title is hidden on large screens but will show on mobile -->
-<h1 class="mobile-title">RealEase Project Home</h1>
+    <main>
+      <section class="hero">
+        <img
+          src="assets/nyc-skyline.jpg"
+          alt="City Skyline"
+          class="hero-background"
+        />
+        <div class="hero-content">
+          <h1>RealEase Documentation</h1>
+          <p class="tagline">
+            A comprehensive real estate analysis tool for informed property
+            investment decisions
+          </p>
+        </div>
+      </section>
 
-<!-- Image container with black rounded rectangle -->
-<div class="image-container">
-    <img src="Milestone_1/RealEase_logo_dark.png" alt="RealEase Logo Dark Mode">
-</div>
+      <section id="about" class="content-section">
+        <div class="section-content">
+          <div class="text-block">
+            <h2>About RealEase</h2>
+            <p>
+              RealEase is an innovative real estate analysis tool designed to
+              help users make informed decisions about property investments and
+              comparisons.
+            </p>
+            <div class="action-cards">
+              <div class="action-card">
+                <h3>Project Overview</h3>
+                <p>Learn about our mission and development process</p>
+                <a
+                  href="Plan/RealEase Project Plan.pdf"
+                  target="_blank"
+                  class="action-link"
+                  >View Plan</a
+                >
+              </div>
+              <div class="action-card">
+                <h3>Live Demo</h3>
+                <p>Try out our application</p>
+                <a
+                  href="Milestone_4/Refreshed_Realease_Demo.mp4"
+                  target="_blank"
+                  class="action-link"
+                  >Launch Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="section-image">
+            <img src="assets/nyc-skyline.jpg" alt="About RealEase" />
+          </div>
+        </div>
+      </section>
 
-<div class="table-container">
-    <table>
-        <tr>
-            <th>Team Members and Email Addresses</th>
-            <td>
-                <div class="team-member">
-                    <span class="name">Donovan Murphy</span>
-                    <span class="email">dmurphy2021@my.fit.edu</span>
+      <section id="team" class="content-section reverse">
+        <div class="section-content">
+          <div class="text-block">
+            <h2>Our Team</h2>
+            <p>
+              Meet the dedicated team behind RealEase and our faculty advisor.
+            </p>
+            <div class="action-cards">
+              <div class="action-card">
+                <h3>Donovan Murphy</h3>
+                <p><i class="fas fa-envelope"></i> dmurphy2021@my.fit.edu</p>
+              </div>
+              <div class="action-card">
+                <h3>Enrique Obregon</h3>
+                <p><i class="fas fa-envelope"></i> eobregon2020@my.fit.edu</p>
+              </div>
+              <div class="action-card">
+                <h3>Jonathan Bailey</h3>
+                <p><i class="fas fa-envelope"></i> jbailey2021@my.fit.edu</p>
+              </div>
+              <div class="action-card">
+                <h3>Fitzroy Nembhard</h3>
+                <p>Faculty Advisor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="milestones" class="content-section">
+        <div class="section-content">
+          <div class="text-block">
+            <h2>Project Milestones</h2>
+            <p>
+              Track our progress through semesters with plans, presentations,
+              and demos.
+            </p>
+            <div class="semester-container">
+              <h3>First Semester</h3>
+              <div class="action-cards">
+                <div class="action-card">
+                  <h3>Plan (Sep 4)</h3>
+                  <div class="milestone-links">
+                    <a href="Plan/RealEase Project Plan.pdf" target="_blank">
+                      <i class="fas fa-file-pdf"></i>
+                      <span>Project Plan</span>
+                    </a>
+                    <a
+                      href="Plan/RealEase Project Plan Slides.pdf"
+                      target="_blank"
+                    >
+                      <i class="fas fa-file-powerpoint"></i>
+                      <span>Presentation Slides</span>
+                    </a>
+                  </div>
                 </div>
-
-                <div class="team-member">
-                    <span class="name">Enrique Obregon</span>
-                    <span class="email">eobregon2020@my.fit.edu</span>
+                <div class="action-card">
+                  <h3>Milestone 1 (Sep 30)</h3>
+                  <div class="milestone-links">
+                    <a
+                      href="Milestone_1/Documents/Requirements.pdf"
+                      target="_blank"
+                    >
+                      <i class="fas fa-file-pdf"></i>
+                      <span>Requirements Document</span>
+                    </a>
+                    <a href="Milestone_1/Documents/Design.pdf" target="_blank">
+                      <i class="fas fa-file-pdf"></i>
+                      <span>Design Document</span>
+                    </a>
+                    <a href="Milestone_1/Documents/Test.pdf" target="_blank">
+                      <i class="fas fa-file-pdf"></i>
+                      <span>Test Document</span>
+                    </a>
+                    <a
+                      href="Milestone_1/RealEase Milestone1.pdf"
+                      target="_blank"
+                    >
+                      <i class="fas fa-file-pdf"></i>
+                      <span>Presentation</span>
+                    </a>
+                    <a href="Milestone_1/RealEase Milestone1.pptx" download>
+                      <i class="fas fa-file-powerpoint"></i>
+                      <span>Presentation (PPTX)</span>
+                    </a>
+                    <a
+                      href="Milestone_1/Documents/Progress_Evaluation.pdf"
+                      target="_blank"
+                    >
+                      <i class="fas fa-file-pdf"></i>
+                      <span>Progress Evaluation</span>
+                    </a>
+                  </div>
                 </div>
-
-                <div class="team-member">
-                    <span class="name">Jonathan Bailey</span>
-                    <span class="email">jbailey2021@my.fit.edu</span>
+                <div class="action-card">
+                  <h3>Milestone 2 (Oct 28)</h3>
+                  <div class="milestone-links">
+                    <a
+                      href="Milestone_2/RealEase Milestone2.pdf"
+                      target="_blank"
+                    >
+                      <i class="fas fa-file-pdf"></i>
+                      <span>Presentation</span>
+                    </a>
+                    <a href="Milestone_2/RealEase Milestone2.pptx" download>
+                      <i class="fas fa-file-powerpoint"></i>
+                      <span>Presentation (PPTX)</span>
+                    </a>
+                    <a
+                      href="Milestone_2/Progress_Evaluation_M2.pdf"
+                      target="_blank"
+                    >
+                      <i class="fas fa-file-pdf"></i>
+                      <span>Progress Evaluation</span>
+                    </a>
+                    <a href="Milestone_2/RealEase_M2_Demo.mp4" target="_blank">
+                      <i class="fas fa-video"></i>
+                      <span>Main Menu Demo</span>
+                    </a>
+                    <a href="Milestone_2/ROI_DEMO.mp4" target="_blank">
+                      <i class="fas fa-video"></i>
+                      <span>ROI Demo</span>
+                    </a>
+                  </div>
                 </div>
-            </td>
-        </tr>
-        <tr>
-            <th>Faculty Advisor</th>
-            <td>Fitzroy Nembhard</td>
-        </tr>
-    </table>
+                <div class="action-card">
+                  <h3>Milestone 3 (Nov 25)</h3>
+                  <div class="milestone-links">
+                    <a
+                      href="Milestone_3/RealEase Milestone 3.pdf"
+                      target="_blank"
+                    >
+                      <i class="fas fa-file-pdf"></i>
+                      <span>Presentation</span>
+                    </a>
+                    <a href="Milestone_3/RealEase Milestone 3.pptx" download>
+                      <i class="fas fa-file-powerpoint"></i>
+                      <span>Presentation (PPTX)</span>
+                    </a>
+                    <a
+                      href="Milestone_3/Progress_Evaluation_M3.pdf"
+                      target="_blank"
+                    >
+                      <i class="fas fa-file-pdf"></i>
+                      <span>Progress Evaluation</span>
+                    </a>
+                    <a href="Milestone_3/HomeCompareDemo.mp4" target="_blank">
+                      <i class="fas fa-video"></i>
+                      <span>Comparison Demo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="semester-container">
+              <h3>Second Semester</h3>
+              <div class="action-cards">
+                <div class="action-card">
+                  <h3>Plan (Jan 27)</h3>
+                  <div class="milestone-links">
+                    <a href="Plan_2/Project Plan 2.pdf" target="_blank">
+                      <i class="fas fa-file-pdf"></i>
+                      <span>Project Plan</span>
+                    </a>
+                    <a
+                      href="Plan_2/RealEase Project Plan 2 Slides.pdf"
+                      target="_blank"
+                    >
+                      <i class="fas fa-file-powerpoint"></i>
+                      <span>Presentation Slides</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="action-card">
+                  <h3>Milestone 4 (Feb 24)</h3>
+                  <div class="milestone-links">
+                    <a
+                      href="Milestone_4/RealEase Milestone 4.pdf"
+                      target="_blank"
+                    >
+                      <i class="fas fa-file-pdf"></i>
+                      <span>Presentation</span>
+                    </a>
+                    <a href="Milestone_4/RealEase Milestone 4.pptx" download>
+                      <i class="fas fa-file-powerpoint"></i>
+                      <span>Presentation (PPTX)</span>
+                    </a>
+                    <a
+                      href="Milestone_4/Progress_Evaluation_M4.pdf"
+                      target="_blank"
+                    >
+                      <i class="fas fa-file-pdf"></i>
+                      <span>Progress Evaluation</span>
+                    </a>
+                    <a
+                      href="Milestone_4/Refreshed_Realease_Demo.mp4"
+                      target="_blank"
+                    >
+                      <i class="fas fa-video"></i>
+                      <span>Refresh Demo</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="action-card">
+                  <h3>Milestone 5 (Mar 26)</h3>
+                  <div class="milestone-links">
+                    <span class="upcoming-milestone">
+                      Poster, e-book page, Presentation, Progress Evaluation
+                    </span>
+                  </div>
+                </div>
+                <div class="action-card">
+                  <h3>Milestone 6 (Apr 21)</h3>
+                  <div class="milestone-links">
+                    <span class="upcoming-milestone">
+                      User/Developer Manual, Demo Video, Presentation, Progress
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <h2>First Semester</h2>
-    <table>
-        <tr>
-            <th>Plan (Sep 4)</th>
-            <td>
-                <a href="Plan/RealEase Project Plan.pdf" target="_blank">Plan</a>,
-                <a href="Plan/RealEase Project Plan Slides.pdf" target="_blank">Presentation</a>
-            </td>
-
-        </tr>
-        <tr>
-            <th>Milestone 1 (Sep 30)</th>
-            <td>
-                <a href="Milestone_1/Documents/Requirements.pdf" target="_blank">Requirement</a>,
-                <a href="Milestone_1/Documents/Design.pdf" target="_blank">Design</a>,
-                <a href="Milestone_1/Documents/Test.pdf" target="_blank">Test</a>,
-                <a href="Milestone_1/RealEase Milestone1.pdf" target="_blank">Presentation</a>
-                <a href="Milestone_1/RealEase Milestone1.pptx" download>(pptx)</a>,
-                <a href="Milestone_1/Documents/Progress_Evaluation.pdf" target="_blank">Progress Evaluation</a>
-
-            </td>
-        </tr>
-        <tr>
-            <th>Milestone 2 (Oct 28)</th>
-            <td>
-                <a href="Milestone_2/RealEase Milestone2.pdf" target="_blank">Presentation</a>
-                <a href="Milestone_2/RealEase Milestone2.pptx" download>(pptx)</a>,
-                <a href="Milestone_2/Progress_Evaluation_M2.pdf" target="_blank">Progress Evaluation</a>,
-                <a href="Milestone_2/RealEase_M2_Demo.mp4" target="_blank">Main Menu Demo</a>,
-                <a href="Milestone_2/ROI_DEMO.mp4" target="_blank">ROI Demo</a>
-
-            </td>
-        </tr>
-        <tr>
-            <th>Milestone 3 (Nov 25)</th>
-            <td>
-                <a href="Milestone_3/RealEase Milestone 3.pdf" target="_blank">Presentation</a>
-                <a href="Milestone_3/RealEase Milestone 3.pptx" download>(pptx)</a>,
-                <a href="Milestone_3/Progress_Evaluation_M3.pdf" target="_blank">Progress Evaluation</a>,
-                <a href="Milestone_3/HomeCompareDemo.mp4" target="_blank">Comparison Demo</a>
-
-            </td>
-        </tr>
-    </table>
-
-    <h2>Second Semester</h2>
-    <table>
-        <tr>
-            <th>Plan (Jan 27)</th>
-            <td>
-                <a href="Plan_2/Project Plan 2.pdf" target="_blank">Plan</a>,
-                <a href="Plan_2/RealEase Project Plan 2 Slides.pdf" target="_blank">Presentation</a>
-            </td>
-        </tr>
-        <tr>
-
-            <th>Milestone 4 (Feb 24)</th>
-            <td>
-            <a href="Milestone_4/RealEase Milestone 4.pdf" target="_blank">Presentation</a>
-            <a href="Milestone_4/RealEase Milestone 4.pptx" download>(pptx)</a>,
-            <a href="Milestone_4/Progress_Evaluation_M4.pdf" target="_blank">Progress Evaluation</a>,
-            <a href="Milestone_4/Refreshed_Realease_Demo.mp4" target="_blank">Refresh Demo</a>
-        </td>
-
-        </tr>
-        <tr>
-            <th>Milestone 5 (Mar 26)</th>
-            <td>Poster, e-book page, Presentation, Progress Evaluation</td>
-        </tr>
-        <tr>
-            <th>Milestone 6 (Apr 21)</th>
-            <td>User and/or Developer Manual, Demo Video, Presentation, Progress Evaluation</td>
-        </tr>
-    </table>
-</div>
-</body>
+    <footer>
+      <p>© 2025 RealEase. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
